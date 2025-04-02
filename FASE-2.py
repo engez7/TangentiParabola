@@ -1,5 +1,5 @@
 """
-FASE 3: Rappresentazione di una retta sul piano cartesiano
+FASE 2: Rappresentazione di una retta sul piano cartesiano
 
 Obiettivo: Disegnare una retta con equazione y = ax + b
 """
