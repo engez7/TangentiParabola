@@ -48,6 +48,5 @@ if __name__ == "__main__":
     x_vals = np.linspace(-10, 10, 100)
     y_vals = retta(x_vals)  # Retta con coeff. default
     ax.plot(x_vals, y_vals, color='green')
-    ax.legend()
 
     plt.show()

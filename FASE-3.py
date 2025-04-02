@@ -49,6 +49,5 @@ if __name__ == "__main__":
     x_vals = np.linspace(-10, 10, 100)
     y_vals = parabola(x_vals)  # Parabola con a di default
     ax.plot(x_vals, y_vals, color='green')
-    ax.legend()
 
     plt.show()

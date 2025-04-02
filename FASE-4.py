@@ -59,5 +59,4 @@ if __name__ == "__main__":
         y_tang = tangente(m, x_vals, a=1)
         ax.plot(x_vals, y_tang, color='red', alpha=0.3, linewidth=0.8)
 
-    ax.legend()
     plt.show()
