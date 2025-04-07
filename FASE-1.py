@@ -15,7 +15,7 @@ def configure_axes(ax):
     """
     # Imposta il titolo dell'asse a sinistra, con un padding di 10 punti
     ax.set_title("Piano cartesiano", pad=10)
-    # Imposta i limiti: asse x da -30 a 30 e asse y da -10 a 20
+    # Imposta i limiti: asse x e asse y
     ax.set_xlim(-20, 20)
     ax.set_ylim(-5, 10)
     # Disattiva la griglia
