@@ -36,7 +36,7 @@ def configure_axes(ax):
     ax.set_aspect('equal', adjustable='box')
 
 # Funzione per calcolare la retta
-def retta(x, a=1, b=0):
+def retta(x, a=0.25, b=5):
     return a * x + b
 
 if __name__ == "__main__":
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     configure_axes(ax)
 
     # Generazione dei punti x per tracciare la retta
-    x_vals = np.linspace(-10, 10, 100)
+    x_vals = np.linspace(-20, 20, 100)
     y_vals = retta(x_vals)  # Retta con coeff. default
     ax.plot(x_vals, y_vals, color='green')
 
