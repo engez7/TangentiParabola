@@ -37,7 +37,7 @@ def configure_axes(ax):
 
 
 # Funzione per calcolare la parabola y = ax^2
-def parabola(x, a=1):
+def parabola(x, a=0.3):
     return a * x**2
 
 if __name__ == "__main__":

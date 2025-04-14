@@ -36,7 +36,7 @@ def configure_axes(ax):
     ax.set_aspect('equal', adjustable='box')
 
 # Funzione per calcolare la retta
-def retta(x, a=0.25, b=5):
+def retta(x, a=1, b=0):
     return a * x + b
 
 if __name__ == "__main__":

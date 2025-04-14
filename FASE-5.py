@@ -9,15 +9,14 @@ from matplotlib.ticker import MultipleLocator     # Importa MultipleLocator per 
 ###############################################################################
 a = 1                   # Coefficiente della parabola (formula: y = a x^2)
 num_tangenti = 50       # Numero totale di tangenti da disegnare
-frequenza_disegno = 10  # Intervallo (in millisecondi) tra i frame dell'animazione
+frequenza_disegno = 1   # Intervallo (in millisecondi) tra i frame dell'animazione
 
 ###############################################################################
 # VETTORI DI BASE
 ###############################################################################
 # Array di 400 punti equispaziati tra -40 e 40 per l'asse x
-x_vals = np.linspace(-40, 40, 400)
-# Array di 'num_tangenti' valori equispaziati da -10 a 10 per il parametro m
-m_vals = np.linspace(-10, 10, num_tangenti)
+x_vals = np.linspace(-20, 20, 100)
+
 
 ###############################################################################
 # FUNZIONE DI CONFIGURAZIONE DEGLI ASSI
@@ -126,7 +125,7 @@ def start_animation(event):
     # Ripristina la configurazione degli assi con la funzione definita
     configure_axes(ax)
     # Aggiorna il vettore dei coefficienti m: genera 'num_tangenti' valori equispaziati da -10 a 10
-    m_vals = np.linspace(-10, 10, num_tangenti)
+    m_vals = np.linspace(-1, 1, num_tangenti)
     # Crea l'animazione:
     #   - fig: la figura su cui animare
     #   - animate: funzione chiamata per ogni frame

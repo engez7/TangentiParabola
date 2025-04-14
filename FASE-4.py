@@ -36,11 +36,11 @@ def configure_axes(ax):
     ax.set_aspect('equal', adjustable='box')
 
 # Funzione per calcolare la parabola y = ax^2
-def parabola(x, a=1):
+def parabola(x, a=0.2):
     return a * x**2
 
 # Funzione per calcolare la retta tangente alla parabola
-def tangente(m, x, a=1):
+def tangente(m, x, a=0.2):
     return m * x - (m**2) / (4 * a)
 
 if __name__ == "__main__":
@@ -49,14 +49,14 @@ if __name__ == "__main__":
     configure_axes(ax)
 
     # Disegno della parabola
-    x_vals = np.linspace(-5, 5, 400)
+    x_vals = np.linspace(-10, 10, 100)
     y_vals = parabola(x_vals)  #Parabola con a di default
     ax.plot(x_vals, y_vals, color='green')
 
     # Generazione delle tangenti
     m_vals = np.linspace(-10, 10, 50)  # Coefficienti angolari delle tangenti da -10 a 10, 50 tangenti
     for m in m_vals:
-        y_tang = tangente(m, x_vals, a=1)
+        y_tang = tangente(m, x_vals, a=0.2)
         ax.plot(x_vals, y_tang, color='red', alpha=0.3, linewidth=0.8)
 
     plt.show()
